@@ -188,7 +188,7 @@ For example, additional VPC's can be added using the `terraform.tfvars` file by 
 vpcs  = ["management", "workload", "<ADDITIONAL VPC>"]
 ```
 
-Provisioned [VPC components](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/vpc)
+Provisioned [VPC components](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/tree/main/patterns/vpc)
 
 ### Using override.json
 
