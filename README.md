@@ -292,7 +292,7 @@ git push --set-upstream origin <branch name from command git checkout above>
 
 ## Sample Applications
 
-Secure Landing Zone provides sample applications that can be used to deploy into your infrastructure. These can be tied into your infrastructure provision pipeline via the application deploy task within. Please see [IBM Cloud Toolchain for Secure Landing Zone](../toolchain/toolchain.md) on the environment variables needed to deploy the sample application using the infrastructure pipeline.
+Secure Landing Zone provides sample applications that can be used to deploy into your infrastructure. These can be tied into your infrastructure provision pipeline via the application deploy task within. Please see [IBM Cloud Toolchain for Secure Landing Zone](./.docs/toolchain/toolchain.md) on the environment variables needed to deploy the sample application using the infrastructure pipeline.
 
 The following sample applications are currently available:
 
