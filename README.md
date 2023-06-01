@@ -106,7 +106,7 @@ For proof of technology environments we recommend using the `auto-init` feature.
 
 ### Select your Pattern
 
-The [landing zone module](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone) can be used to create a fully customizable VPC environment. The three patterns below are each starting templates that can be used to quickly get started with Landing Zone. These patterns can be found in the [patterns](./patterns/) directory.
+The [Landing Zone Module](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone) can be used to create a fully customizable VPC environment. The three patterns below are each starting templates that can be used to quickly get started with Landing Zone. These patterns can be found in the [patterns](./patterns/) directory.
 
 Each of these patterns creates:
 
@@ -188,15 +188,15 @@ For example, additional VPC's can be added using the `terraform.tfvars` file by 
 vpcs  = ["management", "workload", "<ADDITIONAL VPC>"]
 ```
 
-Provisioned [VPC components](./landing-zone/vpc)
+Provisioned [VPC components](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/vpc)
 
 ### Using override.json
 
-The second route is to use the `override.json` to create a fully customized environment based on the starting template. By default, each pattern's `override.json` is set to contain the default environment configuration. Users can use the `override.json` in the respective pattern directory by setting the template `override` variable to `true`. Each value in `override.json` corresponds directly to a variable value from the [Landing Zone Module](./landing-zone/) which each pattern uses to create your environment.
+The second route is to use the `override.json` to create a fully customized environment based on the starting template. By default, each pattern's `override.json` is set to contain the default environment configuration. Users can use the `override.json` in the respective pattern directory by setting the template `override` variable to `true`. Each value in `override.json` corresponds directly to a variable value from the [Landing Zone Module](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/) which each pattern uses to create your environment.
 
 #### Supported Variables
 
-The `override.json` allows users to pass any variable or supported optional variable attributes from the [Landing Zone Module](./landing-zone/), which each pattern uses to provision infrastructure. For a complete list of supported variables and attributes see the [Landing Zone Module variables file](./landing-zone/variables.tf).
+The `override.json` allows users to pass any variable or supported optional variable attributes from the [Landing Zone Module](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/), which each pattern uses to provision infrastructure. For a complete list of supported variables and attributes see the [Landing Zone Module variables file](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/blob/main/variables.tf).
 
 #### Overriding Variables
 
@@ -243,7 +243,7 @@ Teleport allows you to configure a virtual server instance in a VPC as a bastion
 
 Through Secure Landing Zone, users can optionally provision the implemented solution described [here](https://cloud.ibm.com/docs/allowlist/framework-financial-services?topic=framework-financial-services-vpc-architecture-connectivity-bastion-tutorial-teleport) which configures a bastion host in your VPC using Teleport Enterprise Edition, along with provisioning a Object Storage bucket and App ID for enhanced security.
 [App ID](https://cloud.ibm.com/docs/appid) will be used to authenticate users to access teleport. Teleport session recordings will be stored in the Object Storage bucket.
-This [cloud-init file](./landing-zone/teleport_config/cloud-init.tpl) will install teleport, and configure App ID and the Object Storage. These [variables](./landing-zone/teleport_config/variables.tf) will be used for the configuration.
+This [cloud-init file](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/teleport_config/cloud-init.tpl) will install teleport, and configure App ID and the Object Storage. These [variables](https://github.com/terraform-ibm-modules/terraform-ibm-landing-zone/teleport_config/variables.tf) will be used for the configuration.
 
 For more information, please visit [provisioning a bastion host using Teleport](.docs/bastion/bastion.md).
 
